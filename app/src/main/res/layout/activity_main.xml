@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quran4"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="337dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="35dp"
+        android:gravity="right"
+        android:lineSpacingExtra="-9sp"
+        android:padding="1dp"
+        android:text="ما هي السورة التي سميت باسم فاكهة؟"
+        android:textColor="@color/Black"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/answers1"
+        android:layout_width="329dp"
+        android:layout_height="311dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/p1ans1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/answers_background"
+            android:padding="5dp"
+            android:text="الفاتحة"
+            android:textAlignment="textStart"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/p1ans2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/answers_background"
+            android:padding="5dp"
+            android:text="التين"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/p1ans3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/answers_background"
+            android:padding="5dp"
+            android:text="الفلق"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/p1ans4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/answers_background"
+            android:padding="5dp"
+            android:text="الكوثر"
+            android:textAlignment="viewEnd"
+            android:textSize="30sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answers1">
+
+        <TextView
+            android:id="@+id/question_numberp3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="1/3"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/moveto2"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="170dp"
+            android:background="@drawable/move_button_background"
+            android:text="السؤال التالي"
+            android:textColor="@color/Black"
+            android:textSize="35sp"
+            android:visibility="invisible"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/answers2"
+            app:layout_constraintVertical_bias="1.0" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

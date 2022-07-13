@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/quran4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen3">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="299dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="33dp"
+        android:gravity="right"
+        android:lineSpacingExtra="-9sp"
+        android:padding="1dp"
+        android:text="ما هي أقصر سورة في القرآن الكريم؟"
+        android:textColor="@color/Black"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/answers3"
+        android:layout_width="329dp"
+        android:layout_height="311dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/p3ans1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/answers_background"
+            android:padding="5dp"
+            android:text="النور"
+            android:textAlignment="textStart"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/p3ans2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/answers_background"
+            android:padding="5dp"
+            android:text="البروج"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/p3ans3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/answers_background"
+            android:padding="5dp"
+            android:text="الواقعة"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/p3ans4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/answers_background"
+            android:padding="5dp"
+            android:text="الكوثر"
+            android:textAlignment="viewEnd"
+            android:textSize="30sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answers3">
+
+        <TextView
+            android:id="@+id/question_numberp3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="3/3"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="170dp"
+            android:background="@drawable/move_button_background"
+            android:text="إنهاء"
+            android:textColor="@color/Black"
+            android:textSize="35sp"
+            android:visibility="invisible"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/answers2"
+            app:layout_constraintVertical_bias="1.0" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
